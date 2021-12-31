@@ -1,5 +1,11 @@
 # README
 
+* Notes:
+
+https://api.stagingeb.com/playground
+
+- I use dotenv-rails
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
