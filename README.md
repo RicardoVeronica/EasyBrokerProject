@@ -2,16 +2,13 @@
 
 * Notes:
 
-https://api.stagingeb.com/playground
+- Use dotenv-rails to put api_key secret
+- Use pry to test api in seeds.rb
+- Use rest_client and json
 
-- I use dotenv-rails
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
+* Ruby version:
+ruby 3.0.2p107 (2021-07-07 revision 0db68f0233) [x86_64-linux]
+Instaled with https://asdf-vm.com/
 
 * System dependencies
 
@@ -26,5 +23,3 @@ Things you may want to cover:
 * Services (job queues, cache servers, search engines, etc.)
 
 * Deployment instructions
-
-* ...
