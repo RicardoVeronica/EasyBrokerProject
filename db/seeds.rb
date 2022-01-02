@@ -13,6 +13,6 @@ response = RestClient.get(
   "#{BASE_URL}/properties",
   headers={ "X-Authorization" => ENV["API_KEY"] }
 )
-parsed_response = JSON.parse response
+@parsed_response = JSON.parse response
 
 binding.pry

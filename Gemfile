@@ -24,6 +24,8 @@ gem 'jbuilder', '~> 2.7'
 gem 'dotenv-rails', '~> 2.7', '>= 2.7.6'
 gem 'rest-client'
 gem 'json'
+# gem 'open-uri', '~> 0.1.0'
+# gem 'faraday'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
