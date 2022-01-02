@@ -6,7 +6,7 @@
 
 - What was the hardest thing you had to solve while building the website?
 
-Entre lo más difícil que tuve que hacer para este proyecto, fue el aprender a usar el Framework Rails (Fue mi decisión utilizarlo) y consumir la API EasyBroker al mismo tiempo, pues no tenía mínima experiencia consumiendo servicios.
+Entre lo más difícil que tuve que hacer para este proyecto, fue el aprender a usar el Framework Rails (Fue mi decisión utilizarlo) y consumir la API EasyBroker al mismo tiempo, pues tenía mínima experiencia consumiendo servicios.
 
 - Are there any areas of your code that you think isn't that clean?
 
@@ -23,20 +23,24 @@ Instaled with https://asdf-vm.com/
 
 * System dependencies:
 
-gem 'httparty'
+gem 'rest-client'
 
 gem 'json'
 
 gem 'dotenv-rails'
 
-* How to run application
+* How to run the app
 
-1. I used postgresql for database, then you need to start your postgresql local environment
+1. You need to set the API_KEY in root/.env
 
-2. You need to set the API_KEY in easybroker_project/.env
-
-3. Start the development server
+2. Start the development server
 
 ```sh
 rails s
+```
+
+* How to run tests
+
+```sh
+rails test
 ```
