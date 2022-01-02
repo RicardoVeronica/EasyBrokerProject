@@ -5,3 +5,11 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+BASE_URL = "https://api.stagingeb.com/v1"
+ENV["API_KEY"]
+
+response = RestClient.get(
+  "#{BASE_URL}/properties",
+  headers={ "X-Authorization" => ENV["API_KEY"] }
+)
+@parsed_response = JSON.parse response
