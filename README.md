@@ -1,6 +1,6 @@
 # README
 
-[![project-image.png](https://i.postimg.cc/K86pN36C/project-image.png)](https://postimg.cc/mPSSZk2S)
+[![project-img.png](https://i.postimg.cc/GppY37yF/project-img.png)](https://postimg.cc/LJrhNVv5)
 
 ## Notes
 

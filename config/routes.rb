@@ -3,4 +3,6 @@ Rails.application.routes.draw do
   root 'main#index'
 
   get 'about', to: 'about#index', as: :about
+
+  get 'detail', to: 'detail#index'
 end
