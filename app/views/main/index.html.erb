@@ -1,24 +1,17 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>EasyBrokerProject</title>
-  </head>
-  <body>
-      <h1>Welcome to Real State</h1>
+<h1 class="text-center">Welcome to Real State</h1>
 
-        <% @properties.each do |property| %>
-          <div class="card" style="width: 18rem;">
-            <img src="<%= property["title_image_thumb"] %>" class="card-img-top" alt="Property image">
-            <div class="card-body">
-              <h5 class="card-title"><%= property["title"] %></h5>
-              <p class="card-text">Tipo: <%= property["property_type"] %></p>
-              <p class="card-text">Ubicación: <%= property["location"]%></p>
-              <h6 class="card-title">ID: <%= property["public_id"] %></h6>
-              <a href="<%= %>" class="btn btn-primary">Ver detalle</a>
-            </div>
-          </div>
-        <% end %>
-  </body>
-</html>
+<div class="d-flex flex-wrap justify-content-between">
+<% @properties.each do |property| %>
+  <div class="card" style="width: 18rem;">
+    <img src="<%= property["title_image_thumb"] %>" class="card-img-top" alt="Property image">
+    <div class="card-body">
+      <h5 class="card-title"><%= property["title"] %></h5>
+      <p class="card-text">Tipo: <%= property["property_type"] %></p>
+      <p class="card-text">Ubicación: <%= property["location"] %></p>
+      <h6 class="card-title">ID: <%= property["public_id"] %></h6>
+      <%# <a href="" class="btn btn-primary">Ver detalle</a> %>
+      <%= link_to "Ver detalle", detail_path, class: "btn btn-primary" %>
+    </div>
+  </div>
+<% end %>
+</div>
